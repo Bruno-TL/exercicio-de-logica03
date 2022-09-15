@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Gerenciamento de Escola</h1>
+    <hr>
+
+    <button onclick="novo()" id="menu_novo">Novo Aluno</button>
+    <button onclick="listar()" id="menu_listar">Listar Aluno</button>
+    <hr>
+
+    <table id="pagina_listar" style="display: none; border: 1px solid black;">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Telefone</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <Tbody id="tabela_alunos"></Tbody>
+    </table>
+    
+    <form id="pagina_novo" style="display: none;" action="index.js">
+        <label for="nome">Nome</label>
+        <input id="nome" type="text"></input><br>
+
+        <label for="email">Email</label>
+        <input id="email" type="text"></input><br>
+
+        <label for="telefone">Telefone</label>
+        <input id="telefone" type="text"></input><br>
+
+        <button onclick="adicionandoAluno()">Enviar</button>
+    </form>
+
+    <script src="index.js"></script>
+</body>
+</html>
